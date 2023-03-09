@@ -1,0 +1,63 @@
+.NavBar {
+    background-color: rgb(188, 26, 32);
+    color: rgb(237, 204, 85);
+    font-family: 'PT Serif', serif;
+    height: 112px;
+}
+.Hamburger {
+    padding-bottom: 15px;
+    position: absolute;
+    right: 3%;
+    top: 3.5%;
+}
+.NavBar ul li a {
+    color: white;
+    text-decoration: none;
+}
+a h1 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 63px;
+    color: rgb(237, 204, 85);
+    font-family: 'PT Serif', serif;
+}
+a {
+    text-decoration: none;
+}
+.NavBar-divider {
+    color: rgb(237, 204, 85);
+    background-color: rgb(237, 204, 85);
+    border: 1px solid rgb(237, 204, 85);
+}
+.NavBar-items {
+    display: flex;
+    justify-content: center;
+}
+.openMenu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    list-style: none;
+    background-color: var(--catanYellow-color);
+    top: 94px;
+    right: 0;
+    width: 100%;
+    align-content: end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+/* .active {
+    display: none;
+} */
+.openLinks {
+    margin: 0 20px;
+    color: black;
+}
+.NavLinks {
+    width: 100%;
+}
+
+

@@ -1,0 +1,36 @@
+.about-h1 {
+    font-size: 43px;
+}
+.personal-data-links {
+    display: flex;
+    justify-content:center;
+    color: white;
+}
+.external-links {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+h3 {
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+p {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+.About {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.contact {
+    color: white;
+}
