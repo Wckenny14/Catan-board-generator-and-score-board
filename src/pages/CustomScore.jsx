@@ -3,6 +3,7 @@ import './CustomScore.css';
 import NavBar from '../components/NavBar/NavBar';
 import { GiFlyingFlag } from 'react-icons/gi'
 import { FaRegWindowClose } from 'react-icons/fa'
+import About from '../components/about/About';
 
 class CustomScore extends React.Component {
     constructor(props) {
@@ -147,7 +148,7 @@ class CustomScore extends React.Component {
 
     // function to reset score
     handleReset = () => {
-        const newPlayers = this.state.players.map(player => ({ name: player.name, chits: 0, metropolis: 0, metropolisT: 0, metropolisS: 0, merchant: 0, dragons: 0, longestRoad: 0, settlements: 0, cities: 0, victoryPoints: 0, totalVictoryPoints: 0 }));
+        const newPlayers = this.state.players.map(player => ({ name: player.name="", chits: 0, metropolis: 0, metropolisT: 0, metropolisS: 0, merchant: 0, dragons: 0, longestRoad: 0, settlements: 0, cities: 0, victoryPoints: 0, totalVictoryPoints: 0 }));
         this.setState({ players: newPlayers });
     }
 
@@ -475,7 +476,7 @@ class CustomScore extends React.Component {
                                         {longestRoad || merchant && (<hr />)}
                                     </div>
                                 </div>
-                                <h3>Victory Points</h3>
+                                <h3 className='totalVP'>Victory Points</h3>
                                 <div className='Totalscore'>{player.totalVictoryPoints}</div>
                             </div>
                         ))}

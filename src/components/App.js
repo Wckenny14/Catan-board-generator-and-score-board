@@ -1,7 +1,5 @@
-import Header from './header/Header.js'
 import { Routes, Route } from "react-router-dom";
-import { Helmet } from "react-helmet";
-import About from './about/About.js'
+// import { Helmet } from "react-helmet";
 import MapGenerator from '../pages/MapGenerator';
 import ScoreTracker from '../pages/ScoreTracker'
 import Home from '../pages/Home.jsx';
@@ -12,9 +10,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <Helmet>
+      {/* <Helmet>
           <title>Catan Assist</title>
-      </Helmet>
+      </Helmet> */}
         <Routes>
         <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

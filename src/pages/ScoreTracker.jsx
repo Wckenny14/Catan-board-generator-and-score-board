@@ -2,6 +2,7 @@ import React from 'react';
 import './ScoreTracker.css';
 import NavBar from '../components/NavBar/NavBar';
 import { FaRegWindowClose } from 'react-icons/fa'
+import About from '../components/about/About';
 
 class ScoreTracker extends React.Component {
     constructor(props) {
@@ -98,6 +99,7 @@ class ScoreTracker extends React.Component {
         return (
             <div className="score-tracker">
             <NavBar />
+            <div className="container">
                 <form>
                 <div className='all-players'>
                     {players.map((player, index) => (
@@ -184,7 +186,7 @@ class ScoreTracker extends React.Component {
                                 </div>
                             </span>
                             </div>
-                            <h3>Victory Points</h3>
+                            <h3 className='totalVP'>Victory Points</h3>
                             <div className='Totalscore'>
                                 {player.totalVictoryPoints}
                             </div>
@@ -208,6 +210,8 @@ class ScoreTracker extends React.Component {
                         </button>
                     </div>
                 </form>
+                </div>
+                <About />
             </div>
         );
     }

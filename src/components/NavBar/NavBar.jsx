@@ -15,7 +15,7 @@ const NavBar = () => {
         <div className='Hamburger-Nav'>
           <Hamburger />
         </div>
-        <hr className='NavBar-divider'/>
+        {/* <hr className='NavBar-divider'/> */}
       </div>
   );
 }

@@ -26,4 +26,11 @@
 }
 .selection-title {
     margin: 15px auto;
+    margin-top: 50px;
+}
+.totalVP {
+    color: var(--catanRed-color);
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 0;
 }

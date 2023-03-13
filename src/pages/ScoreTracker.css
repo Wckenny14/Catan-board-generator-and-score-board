@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 250px;
-    margin: 20px auto;
+    margin: 5px auto;
     border: 2px solid var(--catanRed-color);
     padding: 15px;
     border-radius: 12px;
@@ -14,6 +14,8 @@
     flex-wrap: wrap;
     width: 70%;
     margin: 0 auto;
+    padding-top: 50px;
+    height: fit-content;
 }
 .addRemoveReset {
     display: flex;
@@ -93,4 +95,7 @@ h4 {
 .playerName {
     font-size: 20px;
     text-align: center;
+}
+.container {
+    background-color: var(--seafarer-color);
 }
